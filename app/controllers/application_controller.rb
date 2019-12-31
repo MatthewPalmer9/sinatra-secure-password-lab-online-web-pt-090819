@@ -22,7 +22,7 @@ class ApplicationController < Sinatra::Base
     end
 
     user = User.new(name: params[:username], password: params[:password])
-    user.save
+    if user.save
 
 
   end
